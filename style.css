@@ -20,9 +20,7 @@ margin: 0 auto;
 .header{
     background-color: #222;
     height: 75px;
-    padding: 19px 0;
-   
-    
+    padding: 19px 0; 
 }
 
 .logo{
@@ -30,8 +28,7 @@ margin: 0 auto;
     justify-content: space-between;
     max-width: 1160px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px 0 10px;
     flex-wrap: wrap;
 }
 
@@ -43,8 +40,6 @@ margin: 0 auto;
    background-color: rgba(241, 228, 230, 1); 
    height: 764px;
    width: 1600px;
-   
-
 }
 
 .text_index{
@@ -519,13 +514,17 @@ line-height: 19px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 48px;
 }
 
 .buttom{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.buttom_a:hover {
+    color: white;
+    background-color: rgba(241, 109, 127, 1);
 }
 
 .buttom_a{
@@ -536,4 +535,210 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 19px;
+margin-top: 48px;
+}
+
+.feature{
+    background-color: black;
+    height: 341px;
+    width: 1600px;
+    margin-top: 94px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10%;
+}
+
+.frame{
+    background: url(../Domashka/img/Layer.jpg);
+    height: 448px;
+    width: 1600px;
+}
+
+.fone_f{
+    background: rgba(244, 244, 244, 0.7);
+    position: absolute;
+    width: 1600px;
+    height: 448px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intersect{
+    width: 360px;
+    height: 225px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.text_intersect{
+font-family: Lato;
+font-style: italic;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+}
+
+.down_input{
+color: black;
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 40px;
+text-align: center;
+margin-bottom: 32px;
+}
+
+.input_email{
+    width: 557px;
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+}
+
+.e_mail{
+    background-color: rgba(225, 225, 225, 1);
+    height: 49px;
+    width: 256px;
+    border-radius: 50px 0 0 50px;
+    padding: 7px 64px 6px 22px;
+    border: none;
+}
+
+.e_mail:focus{
+    outline: none;
+}
+
+.s_ubmit{
+    width: 100px;
+    border-radius: 0 50px 50px 0;
+    background-color: rgba(241, 109, 127, 1);
+    color: white;
+    border: none;
+    padding: 7px 7px 6px 8px;
+}
+
+.s_ubmit:hover{
+    cursor: pointer;
+}
+
+.s_ubmit:focus{
+    outline: none;
+}
+
+
+
+.text_delivery{
+color: white;
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 19.96px;
+line-height: 24px;
+margin: 28px 0 16px 0;
+}
+
+.text_delivery_2{
+color: white;
+font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 13.972px;
+line-height: 17px;
+text-align: center;
+}
+
+.delivery{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 134px;
+    width: 360px;
+}
+
+.sales{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 134px;
+    width: 360px;
+}
+
+.qualiti{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 134px;
+    width: 360px;
+}
+
+.dno{
+    background: black;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteiner_i{
+    display: flex;
+    justify-content: center;
+    margin: 0 15%;
+}
+
+.text_dno{
+color: white;
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+margin: 0 15%;
+}
+
+.fone_i{
+    background-color: white;
+    width: 31px;
+    height: 32px;
+    margin: 0 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.fone_i:hover {
+    fill: white;
+    background-color: rgba(241, 109, 127, 1);
+}
+
+.fone_1{
+    text-decoration: none;
+}
+
+.fa-facebook-f{
+    color: black;
+    background-color: white;
+    width: 31px;
+    height: 32px;
+    margin: 0 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.fa-facebook-f:hover{
+    color: white;
+    background-color: rgba(241, 109, 127, 1);
 }
