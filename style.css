@@ -20,13 +20,7 @@ margin: 0 auto;
 .header{
     background-color: #222;
     height: 75px;
-<<<<<<< HEAD
     padding: 19px 0; 
-=======
-    padding: 19px 0;
-   
-    
->>>>>>> db32c208ba783f8e7cde808efa7455bed55731fc
 }
 
 .logo{
@@ -34,12 +28,7 @@ margin: 0 auto;
     justify-content: space-between;
     max-width: 1160px;
     margin: 0 auto;
-<<<<<<< HEAD
     padding: 0 10px 0 10px;
-=======
-    padding-left: 10px;
-    padding-right: 10px;
->>>>>>> db32c208ba783f8e7cde808efa7455bed55731fc
     flex-wrap: wrap;
 }
 
@@ -51,11 +40,6 @@ margin: 0 auto;
    background-color: rgba(241, 228, 230, 1); 
    height: 764px;
    width: 1600px;
-<<<<<<< HEAD
-=======
-   
-
->>>>>>> db32c208ba783f8e7cde808efa7455bed55731fc
 }
 
 .text_index{
@@ -530,10 +514,6 @@ line-height: 19px;
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-=======
-    margin-top: 48px;
->>>>>>> db32c208ba783f8e7cde808efa7455bed55731fc
 }
 
 .buttom{
@@ -542,14 +522,11 @@ line-height: 19px;
     align-items: center;
 }
 
-<<<<<<< HEAD
 .buttom_a:hover {
     color: white;
     background-color: rgba(241, 109, 127, 1);
 }
 
-=======
->>>>>>> db32c208ba783f8e7cde808efa7455bed55731fc
 .buttom_a{
 text-decoration: none;
 color:#F26376;
@@ -558,7 +535,6 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 19px;
-<<<<<<< HEAD
 margin-top: 48px;
 }
 
@@ -765,6 +741,4 @@ margin: 0 15%;
 .fa-facebook-f:hover{
     color: white;
     background-color: rgba(241, 109, 127, 1);
-=======
->>>>>>> db32c208ba783f8e7cde808efa7455bed55731fc
 }
