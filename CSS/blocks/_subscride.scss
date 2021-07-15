@@ -1,0 +1,87 @@
+.subscribe{
+    background: url(../img/Layer.jpg);
+    height: 448px;
+    width: 1600px;
+
+    &__fone{
+        background: rgba(244, 244, 244, 0.7);
+        position: absolute;
+        width: 1600px;
+        height: 448px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;   
+        
+            &-tsitata{
+                width: 360px;
+                height: 225px;
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+
+                    &-text{
+                        font-family: 'Lato';
+                        font-style: italic;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 24px;
+                        text-align: center;
+                        }
+                    }
+            }
+
+        &__input{
+            width: 557px;
+            height: 142px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+                & form{
+                    display: flex;
+                }
+
+                &-text{
+                    color: black;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 40px;
+                    text-align: center;
+                    margin-bottom: 32px; 
+                }
+
+                &-email{
+                    background-color: rgba(225, 225, 225, 1);
+                    height: 49px;
+                    width: 256px;
+                    border-radius: 50px 0 0 50px;
+                    padding: 7px 64px 6px 22px;
+                    border: none;
+
+                        &:focus{
+                            outline: none; 
+                        }
+                }
+
+                &-submit{
+                    width: 100px;
+                    border-radius: 0 50px 50px 0;
+                    background-color: rgba(241, 109, 127, 1);
+                    color: white;
+                    border: none;
+                    padding: 7px 7px 6px 8px;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+
+                    &:focus{
+                        outline: none;  
+                    }
+                }
+        }
+    }
+

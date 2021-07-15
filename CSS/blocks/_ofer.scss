@@ -1,0 +1,97 @@
+@mixin oferImgStyle {
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin oferImgStyleAfter {
+    content: '';
+    background: rgba(33, 22, 22, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.ofer{
+  max-width: 1160px; 
+  padding-top: 60px; 
+
+    &__img{
+        display: flex;
+        background-repeat: no-repeat;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+            &__women{
+                background-image: url(../img_offer/women.png);
+                width: 360px;
+                height: 260px;
+                margin-bottom: 30px; 
+                @include oferImgStyle;
+
+                &::after{
+                    @include oferImgStyleAfter;
+                }
+            }
+
+            &__men{
+                background-image: url(../img_offer/men.png);
+                width: 360px;
+                height: 260px;
+                margin-bottom: 30px; 
+                @include oferImgStyle;
+
+                &::after{
+                    @include oferImgStyleAfter;
+                }
+            }
+
+            &__kids{
+                background-image: url(../img_offer/kids.png);
+                width: 360px;
+                height: 260px;
+                margin-bottom: 30px; 
+                @include oferImgStyle;
+                
+                &::after{
+                    @include oferImgStyleAfter; 
+                }
+            }
+
+            &__accesories{
+                background-image: url(../img_offer/accesories.png);
+                width: 1160px;
+                height: 180px;
+                margin-bottom: 30px; 
+                @include oferImgStyle;
+
+                &::after{
+                    @include oferImgStyleAfter; 
+                }
+            }
+    }
+}
+
+.ofer__text{
+    content: '';
+    position: absolute;
+
+    &-1{
+        color: rgba(241, 109, 127, 1);
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 19px;
+    }
+
+        &-2{
+            color: white;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+        }
+}

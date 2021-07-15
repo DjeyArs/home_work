@@ -1,0 +1,95 @@
+@mixin catalogFont {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+}
+
+.catalog{
+    max-width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+        &__head{
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding-top: 90px;
+            padding-bottom: 60px;
+
+                &-1{
+                    @include catalogFont;
+                    font-size: 30px;
+                    line-height: 36px;
+                }
+
+                &-2{
+                    @include catalogFont;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+        }
+        &__product{
+            background-color: rgba(248, 248, 248, 1);
+            height: 581px;
+            width: 360px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+
+                &-description{
+                    margin-left: 15px;
+                    margin-right: 10px;
+
+                        &-1{
+                            @include catalogFont;
+                            font-size: 13px;
+                            line-height: 16px;
+                        }
+
+                        &-2{
+                            @include catalogFont;
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
+
+                        &-3{
+                            @include catalogFont;
+                            color: #F16D7F;
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                }
+        }
+
+        &__buttom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & a{
+                @include catalogFont;
+                font-size: 16px;
+                line-height: 19px;
+                color:#F26376;
+                margin-top: 48px;
+                text-decoration: none;
+
+                &:hover{
+                    color: white;
+                    background-color: rgba(241, 109, 127, 1);
+                }
+            }
+            &-text-style{
+                border: 3px solid #F26376;
+                width: 212px;
+                height: 48px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+}

@@ -1,0 +1,67 @@
+.posicion-control-filter{
+max-width: 1160px;
+}
+
+.open[open] summary>svg {
+    transition: 1s;
+    transform: rotate(540deg);
+}
+
+
+.sorting{
+    display: flex;
+    align-items: flex-start;
+    margin: 51px 0 64px 0;
+
+        &--posicion{
+            display: flex;
+        }
+
+        &__button{
+            padding: 0 10px 0 10px;
+            list-style: none;
+            font-family: 'Lato';
+            color: gray;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            &--open{
+                list-style: none;
+                position: absolute;
+                background-color: white;
+                
+                width: 79px;
+                align-items: center;
+
+                & input{
+                    margin: 5px;
+                    cursor: pointer;
+                }
+
+                & span{
+                    list-style: none;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    color: gray;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+    .filter{
+        display: flex;
+        padding-right: 360px;
+        text-decoration: none;
+
+        &__button{
+            list-style: none;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: bold;
+        }
+    }

@@ -1,0 +1,40 @@
+@mixin advantageFont {
+    color: white;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+}
+
+.advantage{
+    background-color: black;
+    height: 341px;
+    width: 1600px;
+    margin-top: 94px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10%;
+
+    &__img{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        height: 134px;
+        width: 360px;
+
+        &-description{
+            @include advantageFont;
+            font-size: 19.96px;
+            line-height: 24px;
+            margin: 28px 0 16px 0;
+        }
+
+        &-description-2{
+            @include advantageFont;
+            font-weight: 300;
+            font-size: 13.972px;
+            line-height: 17px;
+            text-align: center;
+        }
+    }
+}

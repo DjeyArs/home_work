@@ -1,0 +1,60 @@
+.footer{
+    background: black;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        
+        &__text{
+        color: white;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0 15%;
+        }
+
+        &__img{
+            display: flex;
+            justify-content: center;
+            margin: 0 15%;
+
+            & a{
+                text-decoration: none;
+            }
+
+            &-svg{
+                background-color: white;
+                width: 31px;
+                height: 32px;
+                margin: 0 7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 2%;
+
+            &:hover{
+                fill: white;
+                background-color: rgba(241, 109, 127, 1);
+            }
+            }
+        }
+    }
+        
+.fa-facebook-f{
+    color: black;
+    background-color: white;
+    width: 31px;
+    height: 32px;
+    margin: 0 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.fa-facebook-f:hover{
+    color: white;
+    background-color: rgba(241, 109, 127, 1);
+}

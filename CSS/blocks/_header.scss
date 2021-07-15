@@ -1,0 +1,19 @@
+.header{
+    background-color: #222;
+    height: 75px;
+    padding: 19px 0; 
+
+    &__logo{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 10px 0 10px;
+        flex-wrap: wrap;
+
+        & a:not(:last-child){
+            margin-right: 33px;
+        }
+    }
+
+}

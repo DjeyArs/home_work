@@ -1,0 +1,46 @@
+@mixin poster__text {
+font-family: 'Lato';
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 38px;
+}
+
+.poster {
+    background-color: #f1e4e6;
+    height: 764px;
+    width: 1600px;
+
+      &__elements {
+        height: 100%;
+        max-width: 1365px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+          &-img {
+            background-image: url(../img_poster/chel.png);
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 50%;
+          }
+          &-text-decoration{
+            border-left: 12px solid #F16D7F;
+            padding-left: 16px;
+
+            &-1{
+              @include poster__text;
+              font-size: 48px;
+              line-height: 58px;
+            }
+            &-2{
+            @include poster__text;
+          }
+
+            &-3{
+              color: #f16d7f;
+              @include poster__text;
+            }
+            }
+          }
+        }
