@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.conteiner{
+    max-width: 1600px;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../../../Domashka/bem-progres/fonts/lato/Lato-Black.ttf);
+}
+
+@import "../CSS/blocks/vars";
+
+@import "../CSS/blocks/footer";
+
+@import "../CSS/blocks/_header";
+
+@import "../CSS/blocks/form";

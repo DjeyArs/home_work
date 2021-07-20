@@ -1,0 +1,122 @@
+.footer{
+    height: 530px;
+
+&__top{
+    background-image: url(../img/footer/footer-top/01.jpg);
+    height: 448px;
+    
+    
+
+    &--lighter{
+        max-width: 1600px;
+        height: 448px;
+        background-color: rgba(244, 244, 244, 0.7);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+&__left{
+    height: 225px;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+&__quote{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+&__right{
+    width: 557px;
+    height: 137px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+&__text{
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 27px;
+}
+
+&__input{
+    width: 260px;
+    height: 49px;
+    border-radius: 50px 0 0 50px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+}
+
+&__button{
+    text-align: center;
+    width: 100px;
+    height: 49px;
+    border-radius: 0 50px 50px 0;
+    border: none;
+    background-color: $color;
+    color: white;
+    padding-right: 10px;
+}
+
+&__bottom{
+    background-color: black;
+    height: 79px;
+    padding: 0 10px 0 10px;
+
+    &--lighter{
+        max-width: 1160px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+&__protection{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+&__social-networks{
+display: flex;
+}
+
+&__social-img{
+    text-decoration: none;
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        background-color: $color;
+        fill: white;
+    }
+
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+}
+}

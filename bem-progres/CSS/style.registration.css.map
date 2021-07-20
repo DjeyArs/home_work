@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb",
+    "sources": [
+        "style.registration.scss",
+        "blocks/__header.scss"
+    ],
+    "names": [],
+    "file": "style.registration.css"
+}

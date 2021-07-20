@@ -39,6 +39,38 @@
             display: flex;
             flex-wrap: wrap;
 
+            & a{
+                transition: 1s;
+                background-color: rgba(58, 56, 56, 0.7);
+                height: 420px;
+                width: 360px;
+                position: absolute;
+                opacity: 0;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                & span{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    border: 2px white solid;
+                    color: white;
+                    font-size: 14px;
+                    padding: 5px;
+
+                    & svg{
+                        padding-right: 10px;
+                    }
+                }
+
+                &:hover{
+                    opacity: 1;
+            }
+
                 &-description{
                     margin-left: 15px;
                     margin-right: 10px;
@@ -92,4 +124,5 @@
                 align-items: center;
             }
         }
+}
 }

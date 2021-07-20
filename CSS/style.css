@@ -303,12 +303,58 @@
       flex-wrap: wrap;
 }
 
-.catalog__product-description {
+.catalog__product a {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: rgba(58, 56, 56, 0.7);
+  height: 420px;
+  width: 360px;
+  position: absolute;
+  opacity: 0;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.catalog__product a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: 2px white solid;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.catalog__product a span svg {
+  padding-right: 10px;
+}
+
+.catalog__product a:hover {
+  opacity: 1;
+}
+
+.catalog__product a-description {
   margin-left: 15px;
   margin-right: 10px;
 }
 
-.catalog__product-description-1 {
+.catalog__product a-description-1 {
   font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
@@ -316,7 +362,7 @@
   line-height: 16px;
 }
 
-.catalog__product-description-2 {
+.catalog__product a-description-2 {
   font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
@@ -324,7 +370,7 @@
   line-height: 17px;
 }
 
-.catalog__product-description-3 {
+.catalog__product a-description-3 {
   font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
@@ -333,7 +379,7 @@
   line-height: 19px;
 }
 
-.catalog__buttom {
+.catalog__product__buttom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,7 +391,7 @@
           align-items: center;
 }
 
-.catalog__buttom a {
+.catalog__product__buttom a {
   font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
@@ -356,12 +402,12 @@
   text-decoration: none;
 }
 
-.catalog__buttom a:hover {
+.catalog__product__buttom a:hover {
   color: white;
   background-color: #f16d7f;
 }
 
-.catalog__buttom-text-style {
+.catalog__product__buttom-text-style {
   border: 3px solid #F26376;
   width: 212px;
   height: 48px;
@@ -726,6 +772,11 @@
   cursor: pointer;
 }
 
+.filter[open] summary {
+  color: #ef5b70;
+  fill: #ef5b70;
+}
+
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -734,8 +785,52 @@
   text-decoration: none;
 }
 
+.filter:hover {
+  cursor: pointer;
+}
+
 .filter__button {
   list-style: none;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: bold;
+}
+
+.filter__button--open {
+  position: absolute;
+  background-color: white;
+  padding-right: 10px;
+  z-index: 1;
+}
+
+.filter__button--open--decoration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.filter__button--open--decoration a {
+  text-decoration: none;
+  color: gray;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: bold;
+}
+
+.filter__button--open--decoration a:hover {
+  color: #ef5b70;
+}
+
+.filter__button--open details > summary {
+  list-style: none;
+  border-left: 4px #ef5b70 solid;
+  border-bottom: 1px grey solid;
+  margin: 10px 0 10px 0;
+  padding: 5px;
   font-family: 'Lato';
   font-style: normal;
   font-weight: bold;
